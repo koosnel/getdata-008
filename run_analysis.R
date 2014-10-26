@@ -84,5 +84,5 @@ calc_average<-function(data_set) {
 
 master_data<-load_data("UCI HAR Dataset")
 averages<-calc_average(master_data)
-write.table(averages,file="coursera_output.txt")
-write.table(master_data, file="master.txt")
+write.table(averages,file="coursera_output.txt", row.name=FALSE)
+write.table(master_data, file="master.txt", row.name=FALSE)
